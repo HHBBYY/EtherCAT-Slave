@@ -41,7 +41,7 @@ stm32f40_41xxx\el9800appl.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm3
 stm32f40_41xxx\el9800appl.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h
 stm32f40_41xxx\el9800appl.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h
 stm32f40_41xxx\el9800appl.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h
-stm32f40_41xxx\el9800appl.o: ..\User\system.h
+stm32f40_41xxx\el9800appl.o: ..\User\sys\sys.h
 stm32f40_41xxx\el9800appl.o: ..\Ethercat\Inc\objdef.h
 stm32f40_41xxx\el9800appl.o: ..\Ethercat\Inc\sdoserv.h
 stm32f40_41xxx\el9800appl.o: ..\Ethercat\Inc\ecatcoe.h
@@ -50,11 +50,3 @@ stm32f40_41xxx\el9800appl.o: ..\Ethercat\Inc\ecatappl.h
 stm32f40_41xxx\el9800appl.o: ..\Ethercat\Inc\el9800appl.h
 stm32f40_41xxx\el9800appl.o: ..\Ethercat\Inc\ecatappl.h
 stm32f40_41xxx\el9800appl.o: ..\Ethercat\Inc\el9800hw.h
-stm32f40_41xxx\el9800appl.o: ..\User\OLED\oled.h
-stm32f40_41xxx\el9800appl.o: ..\User\sys.h
-stm32f40_41xxx\el9800appl.o: ..\User\BEEP\beep.h
-stm32f40_41xxx\el9800appl.o: ..\User\delay\delay.h
-stm32f40_41xxx\el9800appl.o: ..\User\ADC1.h
-stm32f40_41xxx\el9800appl.o: ..\User\DMA\dma.h
-stm32f40_41xxx\el9800appl.o: ..\User\usart\usart.h
-stm32f40_41xxx\el9800appl.o: D:\Program Files (x86)\Keil\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

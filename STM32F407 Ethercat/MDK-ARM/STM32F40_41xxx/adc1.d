@@ -1,4 +1,4 @@
-stm32f40_41xxx\adc1.o: ..\User\ADC1.c
+stm32f40_41xxx\adc1.o: ..\User\ADC\ADC1.c
 stm32f40_41xxx\adc1.o: ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 stm32f40_41xxx\adc1.o: ..\..\Libraries\CMSIS\Include\core_cm4.h
 stm32f40_41xxx\adc1.o: D:\Program Files (x86)\Keil\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -34,6 +34,6 @@ stm32f40_41xxx\adc1.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_
 stm32f40_41xxx\adc1.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h
 stm32f40_41xxx\adc1.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h
 stm32f40_41xxx\adc1.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h
-stm32f40_41xxx\adc1.o: ..\User\ADC1.h
+stm32f40_41xxx\adc1.o: ..\User\ADC\ADC1.h
 stm32f40_41xxx\adc1.o: ..\User\delay\delay.h
-stm32f40_41xxx\adc1.o: ..\User\sys.h
+stm32f40_41xxx\adc1.o: ..\User\sys\sys.h

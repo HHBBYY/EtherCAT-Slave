@@ -50,15 +50,7 @@ V4.30 : create file
 #include "el9800hw.h"
 #endif
 
-#include "oled.h"
-#include "beep.h"
-#include "delay.h"
-#include "ADC1.h"
-#include "dma.h"
-#include "usart.h"
-
-u16 adc1_1=0,		adc1_2=0,		adc2_1=0,		adc2_2=0;
-s16 Adc_CH1=0,	Adc_CH2=0;
+extern s16 Adc_CH1,	Adc_CH2;
 /*--------------------------------------------------------------------------------------
 ------
 ------    local types and defines
@@ -500,70 +492,17 @@ UINT16 APPL_GetDeviceID()
  \brief    This is the main function
 
 *////////////////////////////////////////////////////////////////////////////////////////
-uint32_t times = 0x1000000;
-u32 adc_value[2];
-#if _STM32_IO8
-int main(void)
-#else
-void main(void)
-#endif
-{	
-		NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);//设置系统中断优先级分组2
-		MYDMA_Config(DMA2_Stream0,DMA_Channel_0,(u32)&ADC->CDR,(u32)adc_value,2);	//DMA初始化
-    /* initialize the Hardware and the EtherCAT Slave Controller */
-    HW_Init();
-    MainInit();
-		delay_init(168);     	//初始化延时函数
-		uart_init(115200);		//串口初始化波特率为115200
-		OLED_Init();					//初始化OLED
-		BEEP_Init();         	//初始化蜂鸣器端口
-	  OLED_ShowString(0,0,"EtherCAT SERVER ",16);  
-		OLED_ShowString(0,16,"LAN9252+F407",12); 	
-		OLED_ShowString(0,28,"TIME 2021/02/13",12);  
-		OLED_ShowString(0,40,"ADC1:",12);  
-		OLED_ShowString(0,52,"ADC2:",12);
-		OLED_Refresh_Gram();//更新显示到OLED	 
-    bRunApplication = TRUE;
-    do
-    {
-        MainLoop();
-				//adcx = Get_Adc_Average(ADC_Channel_7, 20);//获取通道5的转换值，20次取平均
-				//OLED_ShowNum(30,40,adcx,4,12);
-			
-				// 取出ADC数据寄存器的低16位，这个是ADC1的转换数据
-				adc1_1 = (adc_value[0]&0XFFFF);
-				adc1_2 = (adc_value[1]&0XFFFF);
-							
-				// 取出ADC数据寄存器的高16位，这个是ADC2的转换数据
-				adc2_1 = (adc_value[0]&0XFFFF0000) >> 16;
-				adc2_2 = (adc_value[1]&0XFFFF0000) >> 16;
-			
-			  Adc_CH1 = adc2_1-adc1_1;
-				Adc_CH2 = adc2_2-adc1_2;
-			
-				OLED_ShowNum(30,40,adc1_1,4,12);
-				OLED_ShowNum(60,40,adc1_2,4,12);
-				OLED_ShowNum(100,40,Adc_CH1,4,12);
-			
-				OLED_ShowNum(30,52,adc2_1,4,12);
-				OLED_ShowNum(60,52,adc2_2,4,12);
-				OLED_ShowNum(100,52,Adc_CH2,4,12);
-				OLED_Refresh_Gram();        //更新显示到OLED
-				
-				printf("Adc_CH1:%d\r\n",Adc_CH1);
-				printf("Adc_CH2:%d\r\n",Adc_CH2);
-				printf("\r\n");
-				
-				delay_ms(100);
-				
 
-    } while (bRunApplication == TRUE);
-
-    HW_Release();
-#if _STM32_IO8
-    return 0;
-#endif
-}
+//#if _STM32_IO8
+//int main(void)
+//#else
+//void main(void)
+//#endif
+//{	
+//#if _STM32_IO8
+//    return 0;
+//#endif
+//}
 #endif //#if USE_DEFAULT_MAIN
 #endif //#if EL9800_APPLICATION
 

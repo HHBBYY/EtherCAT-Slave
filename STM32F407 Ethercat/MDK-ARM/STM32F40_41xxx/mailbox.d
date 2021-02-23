@@ -40,7 +40,7 @@ stm32f40_41xxx\mailbox.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4
 stm32f40_41xxx\mailbox.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h
 stm32f40_41xxx\mailbox.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h
 stm32f40_41xxx\mailbox.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h
-stm32f40_41xxx\mailbox.o: ..\User\system.h
+stm32f40_41xxx\mailbox.o: ..\User\sys\sys.h
 stm32f40_41xxx\mailbox.o: ..\Ethercat\Inc\mailbox.h
 stm32f40_41xxx\mailbox.o: ..\Ethercat\Inc\ecatcoe.h
 stm32f40_41xxx\mailbox.o: ..\Ethercat\Inc\mailbox.h

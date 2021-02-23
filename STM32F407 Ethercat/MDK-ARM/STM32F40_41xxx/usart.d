@@ -1,5 +1,5 @@
 stm32f40_41xxx\usart.o: ..\User\usart\usart.c
-stm32f40_41xxx\usart.o: ..\User\sys.h
+stm32f40_41xxx\usart.o: ..\User\sys\sys.h
 stm32f40_41xxx\usart.o: ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 stm32f40_41xxx\usart.o: ..\..\Libraries\CMSIS\Include\core_cm4.h
 stm32f40_41xxx\usart.o: D:\Program Files (x86)\Keil\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -37,3 +37,11 @@ stm32f40_41xxx\usart.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx
 stm32f40_41xxx\usart.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h
 stm32f40_41xxx\usart.o: ..\User\usart\usart.h
 stm32f40_41xxx\usart.o: D:\Program Files (x86)\Keil\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+stm32f40_41xxx\usart.o: ..\FreeRTOS\include\FreeRTOS.h
+stm32f40_41xxx\usart.o: D:\Program Files (x86)\Keil\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+stm32f40_41xxx\usart.o: ..\FreeRTOS\include\FreeRTOSConfig.h
+stm32f40_41xxx\usart.o: ..\FreeRTOS\include\projdefs.h
+stm32f40_41xxx\usart.o: ..\FreeRTOS\include\portable.h
+stm32f40_41xxx\usart.o: ..\FreeRTOS\include\deprecated_definitions.h
+stm32f40_41xxx\usart.o: ..\FreeRTOS\portable\RVDS\ARM_CM4F\portmacro.h
+stm32f40_41xxx\usart.o: ..\FreeRTOS\include\mpu_wrappers.h

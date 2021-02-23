@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,STM32F40_41xxx</Define>
               <Undefine></Undefine>
-              <IncludePath>..\;..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include;..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc;..\Ethercat\Inc;..\Ethercat\src;..\User;..\..\Libraries\CMSIS\Include;..\User\BEEP;..\User\delay;..\User\OLED;..\User\DMA;..\User\usart</IncludePath>
+              <IncludePath>..\;..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include;..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc;..\Ethercat\Inc;..\Ethercat\src;..\User;..\..\Libraries\CMSIS\Include;..\User\BEEP;..\User\delay;..\User\OLED;..\User\DMA;..\User\usart;..\User\ADC;..\User\SPI;..\User\sys;..\FreeRTOS\include;..\FreeRTOS\portable\RVDS\ARM_CM4F</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -401,22 +401,17 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Doc</GroupName>
-          <Files>
-            <File>
-              <FileName>readme.txt</FileName>
-              <FileType>5</FileType>
-              <FilePath>../readme.txt</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>User</GroupName>
           <Files>
             <File>
               <FileName>stm32f4xx_it.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\stm32f4xx_it.c</FilePath>
+            </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\main.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -437,16 +432,6 @@
               <FileName>EXIT.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\EXIT.c</FilePath>
-            </File>
-            <File>
-              <FileName>SPI1.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\User\SPI1.c</FilePath>
-            </File>
-            <File>
-              <FileName>ADC1.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\User\ADC1.c</FilePath>
             </File>
             <File>
               <FileName>beep.c</FileName>
@@ -472,6 +457,21 @@
               <FileName>usart.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\usart\usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>SPI1.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\SPI\SPI1.c</FilePath>
+            </File>
+            <File>
+              <FileName>ADC1.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\ADC\ADC1.c</FilePath>
+            </File>
+            <File>
+              <FileName>sys.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\sys\sys.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -637,6 +637,61 @@
               <FileName>stm32f4xx_usart.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_usart.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>FreeRTOS</GroupName>
+          <Files>
+            <File>
+              <FileName>croutine.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FreeRTOS\croutine.c</FilePath>
+            </File>
+            <File>
+              <FileName>event_groups.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FreeRTOS\event_groups.c</FilePath>
+            </File>
+            <File>
+              <FileName>list.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FreeRTOS\list.c</FilePath>
+            </File>
+            <File>
+              <FileName>queue.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FreeRTOS\queue.c</FilePath>
+            </File>
+            <File>
+              <FileName>tasks.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FreeRTOS\tasks.c</FilePath>
+            </File>
+            <File>
+              <FileName>timers.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FreeRTOS\timers.c</FilePath>
+            </File>
+            <File>
+              <FileName>port.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FreeRTOS\portable\RVDS\ARM_CM4F\port.c</FilePath>
+            </File>
+            <File>
+              <FileName>heap_4.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FreeRTOS\portable\MemMang\heap_4.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Doc</GroupName>
+          <Files>
+            <File>
+              <FileName>readme.txt</FileName>
+              <FileType>5</FileType>
+              <FilePath>../readme.txt</FilePath>
             </File>
           </Files>
         </Group>

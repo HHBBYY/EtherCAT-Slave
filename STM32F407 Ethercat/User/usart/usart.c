@@ -3,7 +3,7 @@
 ////////////////////////////////////////////////////////////////////////////////// 	 
 //如果使用ucos,则包括下面的头文件即可.
 #if SYSTEM_SUPPORT_OS
-#include "includes.h"					//ucos 使用	  
+#include "FreeRTOS.h"					//ucos 使用	  
 #endif
 //////////////////////////////////////////////////////////////////////////////////	 
 //本程序只供学习使用，未经作者许可，不得用于其它任何用途
@@ -178,7 +178,7 @@ void USART6_IRQHandler(void)                	//串口6中断服务程序
 {
 	u8 Res;
 #if SYSTEM_SUPPORT_OS 		//如果SYSTEM_SUPPORT_OS为真，则需要支持OS.
-	OSIntEnter();    
+	//OSIntEnter();    
 #endif
 	if(USART_GetITStatus(USART6, USART_IT_RXNE) != RESET)  //接收中断(接收到的数据必须是0x0d 0x0a结尾)
 	{
@@ -204,7 +204,7 @@ void USART6_IRQHandler(void)                	//串口6中断服务程序
 		}   		 
   } 
 #if SYSTEM_SUPPORT_OS 	//如果SYSTEM_SUPPORT_OS为真，则需要支持OS.
-	OSIntExit();  											 
+	//OSIntExit();  											 
 #endif
 } 
 #endif	

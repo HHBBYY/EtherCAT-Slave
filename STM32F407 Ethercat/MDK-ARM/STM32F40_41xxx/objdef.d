@@ -40,7 +40,7 @@ stm32f40_41xxx\objdef.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4x
 stm32f40_41xxx\objdef.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h
 stm32f40_41xxx\objdef.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h
 stm32f40_41xxx\objdef.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h
-stm32f40_41xxx\objdef.o: ..\User\system.h
+stm32f40_41xxx\objdef.o: ..\User\sys\sys.h
 stm32f40_41xxx\objdef.o: ..\Ethercat\Inc\coeappl.h
 stm32f40_41xxx\objdef.o: ..\Ethercat\Inc\objdef.h
 stm32f40_41xxx\objdef.o: ..\Ethercat\Inc\sdoserv.h
