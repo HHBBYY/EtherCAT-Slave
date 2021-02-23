@@ -1,6 +1,6 @@
 stm32f40_41xxx\dma.o: ..\User\DMA\dma.c
 stm32f40_41xxx\dma.o: ..\User\DMA\dma.h
-stm32f40_41xxx\dma.o: ..\User\sys.h
+stm32f40_41xxx\dma.o: ..\User\sys\sys.h
 stm32f40_41xxx\dma.o: ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 stm32f40_41xxx\dma.o: ..\..\Libraries\CMSIS\Include\core_cm4.h
 stm32f40_41xxx\dma.o: D:\Program Files (x86)\Keil\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h

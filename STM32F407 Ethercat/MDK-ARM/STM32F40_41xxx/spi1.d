@@ -1,4 +1,4 @@
-stm32f40_41xxx\spi1.o: ..\User\SPI1.c
+stm32f40_41xxx\spi1.o: ..\User\SPI\SPI1.c
 stm32f40_41xxx\spi1.o: ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 stm32f40_41xxx\spi1.o: ..\..\Libraries\CMSIS\Include\core_cm4.h
 stm32f40_41xxx\spi1.o: D:\Program Files (x86)\Keil\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -34,10 +34,10 @@ stm32f40_41xxx\spi1.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_
 stm32f40_41xxx\spi1.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h
 stm32f40_41xxx\spi1.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h
 stm32f40_41xxx\spi1.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h
-stm32f40_41xxx\spi1.o: ..\User\SPI1.h
+stm32f40_41xxx\spi1.o: ..\User\SPI\SPI1.h
 stm32f40_41xxx\spi1.o: ..\Ethercat\Inc\ecat_def.h
 stm32f40_41xxx\spi1.o: D:\Program Files (x86)\Keil\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 stm32f40_41xxx\spi1.o: D:\Program Files (x86)\Keil\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 stm32f40_41xxx\spi1.o: ..\Ethercat\Inc\el9800hw.h
 stm32f40_41xxx\spi1.o: ..\Ethercat\Inc\esc.h
-stm32f40_41xxx\spi1.o: ..\User\system.h
+stm32f40_41xxx\spi1.o: ..\User\sys\sys.h

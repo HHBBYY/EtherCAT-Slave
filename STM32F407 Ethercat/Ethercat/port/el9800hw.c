@@ -78,7 +78,7 @@ V4.00 APPL 4: The EEPROM access through the ESC is added
 /* ECATCHANGE_END(V5.11) ECAT10*/
 
 #include "ecatappl.h"
-#include "system.h"
+#include "sys.h"
 
 /*--------------------------------------------------------------------------------------
 ------

@@ -2,7 +2,7 @@ stm32f40_41xxx\el9800hw.o: ..\Ethercat\port\el9800hw.c
 stm32f40_41xxx\el9800hw.o: ..\Ethercat\Inc\ecat_def.h
 stm32f40_41xxx\el9800hw.o: D:\Program Files (x86)\Keil\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 stm32f40_41xxx\el9800hw.o: D:\Program Files (x86)\Keil\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-stm32f40_41xxx\el9800hw.o: ..\User\SPI1.h
+stm32f40_41xxx\el9800hw.o: ..\User\SPI\SPI1.h
 stm32f40_41xxx\el9800hw.o: ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 stm32f40_41xxx\el9800hw.o: ..\..\Libraries\CMSIS\Include\core_cm4.h
 stm32f40_41xxx\el9800hw.o: D:\Program Files (x86)\Keil\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -41,6 +41,6 @@ stm32f40_41xxx\el9800hw.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f
 stm32f40_41xxx\el9800hw.o: ..\Ethercat\Inc\ecatslv.h
 stm32f40_41xxx\el9800hw.o: ..\Ethercat\Inc\el9800hw.h
 stm32f40_41xxx\el9800hw.o: ..\Ethercat\Inc\esc.h
-stm32f40_41xxx\el9800hw.o: ..\User\system.h
+stm32f40_41xxx\el9800hw.o: ..\User\sys\sys.h
 stm32f40_41xxx\el9800hw.o: ..\Ethercat\Inc\el9800hw.h
 stm32f40_41xxx\el9800hw.o: ..\Ethercat\Inc\ecatappl.h

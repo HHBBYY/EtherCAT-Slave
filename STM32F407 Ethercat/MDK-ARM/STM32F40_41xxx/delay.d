@@ -1,6 +1,6 @@
 stm32f40_41xxx\delay.o: ..\User\delay\delay.c
 stm32f40_41xxx\delay.o: ..\User\delay\delay.h
-stm32f40_41xxx\delay.o: ..\User\sys.h
+stm32f40_41xxx\delay.o: ..\User\sys\sys.h
 stm32f40_41xxx\delay.o: ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 stm32f40_41xxx\delay.o: ..\..\Libraries\CMSIS\Include\core_cm4.h
 stm32f40_41xxx\delay.o: D:\Program Files (x86)\Keil\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -36,3 +36,15 @@ stm32f40_41xxx\delay.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx
 stm32f40_41xxx\delay.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h
 stm32f40_41xxx\delay.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h
 stm32f40_41xxx\delay.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h
+stm32f40_41xxx\delay.o: ..\FreeRTOS\include\FreeRTOS.h
+stm32f40_41xxx\delay.o: D:\Program Files (x86)\Keil\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+stm32f40_41xxx\delay.o: ..\FreeRTOS\include\FreeRTOSConfig.h
+stm32f40_41xxx\delay.o: ..\User\usart\usart.h
+stm32f40_41xxx\delay.o: D:\Program Files (x86)\Keil\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+stm32f40_41xxx\delay.o: ..\FreeRTOS\include\projdefs.h
+stm32f40_41xxx\delay.o: ..\FreeRTOS\include\portable.h
+stm32f40_41xxx\delay.o: ..\FreeRTOS\include\deprecated_definitions.h
+stm32f40_41xxx\delay.o: ..\FreeRTOS\portable\RVDS\ARM_CM4F\portmacro.h
+stm32f40_41xxx\delay.o: ..\FreeRTOS\include\mpu_wrappers.h
+stm32f40_41xxx\delay.o: ..\FreeRTOS\include\task.h
+stm32f40_41xxx\delay.o: ..\FreeRTOS\include\list.h
